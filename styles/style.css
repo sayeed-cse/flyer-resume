@@ -69,7 +69,7 @@ body {
   width: 150px;
 }
 
-.personal_info {}
+/* .personal_info {} */
 
 .profile_dp {
   position: relative;
@@ -103,15 +103,15 @@ body {
   
 }
 
-.profile_info div {
-  margin-top: 100px;
+.profile_info >div {
+  margin-top: 70px;
 }
 
 .personal_heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 
 
 }
@@ -119,6 +119,12 @@ body {
   font-size: 40px;
   font-weight:500 ;
   line-height: 30px;
+}
+.contact_info{
+  margin-bottom: 150px;
+}
+.contact_info>div{
+  margin-bottom: 45px;
 }
 .contact_info .heading3{
   font-weight: 500;
@@ -176,7 +182,7 @@ body {
 }
 
 /* experience area start */
-.experience_body {}
+/* .experience_body {} */
 
 .card_info {
   display: flex;
