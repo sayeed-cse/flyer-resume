@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+  --dark1: #152337;
+  --DeepSkyBlue:#5FBCE4;
+  --cyan:#71BBB2;
+  --lite-red:#D15357;
+  --dark-gray:#6D7177;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  gap: 30px;
+  /* left:150px; */
+  top: 100px;
+
+}
+.heading1{
+  font-size: 70px;
+  
+}
+.heading2{
+  font-size: 55px;
+  font-weight: 400;
+  margin-bottom:50px;
+}
+.heading3{
+  font-size: 25px;
+}
+.heading4{
+  font-size: 30px;
+}
+.heading5{
+  font-size: 22px;
+}
+.text1{
+  font-size: 20px;
+}
+.wave{
+  width: 350px;
+  height: 40px;
+}
+.personal_info {}
+
+.profile {}
+
+.profile > img {
+  height: 170px;
+  width: 170px;
+  position: absolute; 
+}
+
+.profile_pic {
+  width: 230px;
+  height: 344px;
+  position: relative;
+  top: 35px;
+  left: 35px;
+}
+
+.profile_pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0px 15px 15px 15px;
+}
+
+.professional_info {
+  margin-top: 35px;
+}
+.profile_title{
+  margin-bottom: 100px;
+}
+
+.person_name{
+  color: var(--dark1);
+  font-weight: 400;
+}
+.profession{
+  color: var(--DeepSkyBlue);
+  font-size: 25px;
+}
+.experiences{
+  margin-top: 20px;
+}
+.experience_heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* experience area start */
+.experience_body{}
+.card_info{
+  display: flex;
+  justify-content: space-between;
+}
+.card_title{
+  line-height: 40px;
+}
+.card_name{
+  color: var(--lite-red);
+}
+.duration{
+  color: var(--cyan);
+}
+.description{
+  margin: 30px 0;
+  color: var(--dark-gray);
+}
+.description ul li{
+  position: relative;
+  left: 20px;
+  margin: 30px 0px;
+}
+.description span{
+  margin-left: 5px;
+}
+/* experience area End */
+.educations,.personalSkills{
+  margin-top: 80px;
+}
+.skills_body{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 100px;
+  row-gap: 30px;
+  color: var(--dark-gray);
+  margin-bottom: 100px;
+}
+.progressbar { 
+  height: 10px;  
+  position: relative;
+  background: #E7E7E7;
+  margin-top: 7px;
+}
+.progressbar > span {
+  display: block;
+  height: 100%;
+  background-color: var(--cyan);
+  
+}
+.branding_skills span{
+  width: 30%;
+}
+
+.photoshop_skills span{
+  width: 60%;
+}
+.print_skills span{
+  width: 100%;
+}
+.design_skills span{
+  width: 75%;
+}
+.web_skills span{
+  width: 85%;
+}
+.wd_skills span{
+  width: 95%;
+}
