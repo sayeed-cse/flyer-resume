@@ -12,9 +12,15 @@
 </head>
 
 <body class="paper_a4">
-  <div class="color_mode">
-    <b>Black Theme</b> <span class="theme_btn">OFF</span>
+  <div class="functionality" >
+    <div class="color_mode">
+      <b>Black Theme</b> <span class="theme_btn">OFF</span>
+    </div>
+    <div class="paper_mode">
+      <b>Paper Type</b> <span class="paper_btn">A4 size</span>
+    </div>
   </div>
+  
   <main class="container">
     <!-- personal section start -->
     <div class="personal_info">
@@ -246,6 +252,17 @@
           $("body").addClass("dark");
           $(".theme_btn").addClass("theme_btn_dark");
           $(".theme_btn").text("ON");
+        }
+      });
+      $(".paper_btn").on("click", function () {
+        if ($("body").hasClass("paper_letter")) {
+          $("body").removeClass("paper_letter");
+          $(".paper_btn").removeClass("paper_btn_dark");
+          $(".paper_btn").text("A4 size");
+        } else {
+          $("body").addClass("paper_letter");
+          $(".paper_btn").addClass("paper_btn_dark");
+          $(".paper_btn").text("Letter size");
         }
       });
     });
