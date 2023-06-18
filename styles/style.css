@@ -15,19 +15,27 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+
+}
+
+.paper_a4 {
+  aspect-ratio: 8.27/11.67;
+}
+
+.paper_letter {
+  aspect-ratio: 8.5/11;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1240px;
+  max-height: 1754px;
   margin: auto;
   display: grid;
   grid-template-columns: 4fr 8fr;
-  justify-content: center;
-  align-content: center;
   position: relative;
-  gap: 100px;
-  /* left:150px; */
+  gap: 50px;
   top: 100px;
+
 
 }
 
@@ -39,7 +47,6 @@ body {
 .heading2 {
   font-size: 55px;
   font-weight: 400;
-  margin-bottom: 50px;
 }
 
 .heading3 {
@@ -76,17 +83,17 @@ body {
 }
 
 .profile_dp > img {
-  height: 270px;
-  width: 270px;
+  height: 250px;
+  width: 250px;
   position: absolute;
 }
 
 .profile_pic {
-  width: 390px;
-  height: 550px;
+  width: 330px;
+  aspect-ratio: 5/6;
   position: relative;
-  top: 55px;
-  left: 55px;
+  top: 50px;
+  left: 50px;
 }
 
 .profile_pic img {
@@ -99,11 +106,11 @@ body {
 .profile_info {
   position: relative;
   top: 55px;
-  
-  
+
+
 }
 
-.profile_info >div {
+.profile_info > div {
   margin-top: 70px;
 }
 
@@ -115,22 +122,27 @@ body {
 
 
 }
-.profile_head_left{
+
+.profile_head_left {
   font-size: 40px;
-  font-weight:500 ;
+  font-weight: 500;
   line-height: 30px;
 }
-.contact_info{
+
+.contact_info {
   margin-bottom: 150px;
 }
-.contact_info>div{
+
+.contact_info > div {
   margin-bottom: 45px;
 }
-.contact_info .heading3{
+
+.contact_info .heading3 {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.qr_section{
+
+.qr_section {
   background-color: var(--lite-red);
   color: white;
   height: 500px;
@@ -140,18 +152,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-.qr_section h3{
-  font-size:30px;
+
+.qr_section h3 {
+  font-size: 30px;
   font-weight: lighter;
   line-height: 50px;
 }
-.qr_section p{
+
+.qr_section p {
   font-size: 25px;
 }
-.qr_section .qr-image{
+
+.qr_section .qr-image {
   margin-top: 50px;
   width: 200px;
 }
+
 /* right side start */
 .professional_info {
   margin-top: 35px;
@@ -179,6 +195,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 /* experience area start */
@@ -268,3 +285,6 @@ body {
 .wd_skills span {
   width: 95%;
 }
+
+
+
