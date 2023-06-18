@@ -7,9 +7,14 @@
   <title>Flyer-resume-light</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/print.css" media="print">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body class="paper_a4">
+  <div class="color_mode">
+    <b>Black Theme</b> <span class="theme_btn">OFF</span>
+  </div>
   <main class="container">
     <!-- personal section start -->
     <div class="personal_info">
@@ -229,6 +234,22 @@
     </div>
     <!-- professional section End -->
   </main>
+
+  <script>
+    $(document).ready(function () {
+      $(".theme_btn").on("click", function () {
+        if ($("body").hasClass("dark")) {
+          $("body").removeClass("dark");
+          $(".theme_btn").removeClass("theme_btn_dark");
+          $(".theme_btn").text("OFF");
+        } else {
+          $("body").addClass("dark");
+          $(".theme_btn").addClass("theme_btn_dark");
+          $(".theme_btn").text("ON");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -1,4 +1,6 @@
-
+.color_mode{
+        display: none !important;
+    }
   .container {
     top: 20px;
   }
