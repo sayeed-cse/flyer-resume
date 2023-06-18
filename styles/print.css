@@ -80,7 +80,7 @@
   }
 
   .contact_info > div {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   .contact_info .heading3 {
@@ -88,21 +88,25 @@
   }
 
   .qr_section {
-    height: 300px;
+    height: 250px;
     border-radius: 12px 12px 0 0;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 15px;
+
   }
 
   .qr_section h3 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
   }
 
   .qr_section p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .qr_section .qr-image {
-    margin-top: 30px;
+    margin-top: 15px;
     width: 100px;
   }
 
