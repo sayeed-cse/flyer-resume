@@ -8,7 +8,6 @@
   --dark-gray: #6D7177;
 }
 
-
 * {
   padding: 0;
   margin: 0;
@@ -16,36 +15,51 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-
 }
-.functionality{
+
+.functionality {
   position: fixed;
   right: 0;
   text-align: right;
   margin-right: 20px;
 }
-.color_mode,.paper_mode{ 
+
+.color_mode,
+.paper_mode {
   margin: 20px 0px;
-} 
-.theme_btn ,.paper_btn{ 
-  cursor: pointer; 
-  border-radius: 5px; 
-  padding: 5px 15px; 
+}
+
+.theme_btn,
+.paper_btn {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 15px;
   background-color: #71BBB2;
   color: #ffffff;
 }
-.theme_btn_dark,.paper_btn_dark{
+
+.theme_btn_dark,
+.paper_btn_dark {
   background-color: #D15357;
   color: #E7E7E7;
 }
-.dark{ 
-  background-color: #222; 
-  color: #e6e6e6; 
-}
-.dark h1,.dark .text1,.dark .heading1{ 
-color: #ffffff;         
-} 
 
+.dark {
+  /* background-color: #222; */
+  background-color: #152337;
+  color: #ffffff;
+}
+
+.dark h1,
+.dark .text1,
+.dark .heading1,.dark .letter_body .description,
+.dark .heading6{
+  color: #ffffff;
+}
+.dark .signature{
+  
+  filter: invert(100%);
+}
 .paper_a4 {
   aspect-ratio: 8.27/11.67;
 }
@@ -63,13 +77,10 @@ color: #ffffff;
   position: relative;
   gap: 50px;
   top: 100px;
-
-
 }
 
 .heading1 {
   font-size: 70px;
-
 }
 
 .heading2 {
@@ -88,7 +99,10 @@ color: #ffffff;
 .heading5 {
   font-size: 22px;
 }
-
+.heading6{
+  font-size: 20px;
+  color: #000000;
+}
 .text1 {
   font-size: 20px;
   color: var(--dark-gray);
@@ -103,9 +117,12 @@ color: #ffffff;
   height: 40px;
   width: 150px;
 }
-
-/* .personal_info {} */
-
+.my_1{
+  margin: 10px 0;
+}
+.my_2{
+  margin: 30px 0;
+}
 .profile_dp {
   position: relative;
 }
@@ -134,8 +151,6 @@ color: #ffffff;
 .profile_info {
   position: relative;
   top: 55px;
-
-
 }
 
 .profile_info > div {
@@ -147,8 +162,6 @@ color: #ffffff;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px;
-
-
 }
 
 .profile_head_left {
@@ -227,7 +240,6 @@ color: #ffffff;
 }
 
 /* experience area start */
-/* .experience_body {} */
 
 .card_info {
   display: flex;
@@ -287,7 +299,6 @@ color: #ffffff;
   display: block;
   height: 100%;
   background-color: var(--cyan);
-
 }
 
 .branding_skills span {
@@ -314,5 +325,26 @@ color: #ffffff;
   width: 95%;
 }
 
+/* letter section */
+.letter_heading{
 
-
+}
+.letter_body{
+  font-size: 20px;
+}
+.letter_body .heading6{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.letter_para{
+  display: inline-block;
+}
+.letter_footer{
+  margin-top: 100px;
+}
+.signature{
+  margin-bottom: 20px;
+}
+.letter_footer .card_name{
+  color: var(--DeepSkyBlue);
+}
